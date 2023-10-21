@@ -1,0 +1,67 @@
+// variable scss
+@import "variables";
+
+// mixin scss
+@import "mixins";
+@import "extends";
+// default scss
+@import "common";
+
+// button scss
+@import "button";
+
+@import "blog";
+@import "single_blog";
+// body scss
+@import "./page/our_depertment";
+@import "./page/company";
+@import "menu";
+@import "./page/banner";
+@import "./page/about_us";
+@import "./page/service";
+@import "./page/_traffic_part";
+@import "./page/check_in";
+@import "./page/_environment";
+@import "./page/_rooms";
+
+
+
+@import "review";
+@import "regervation_part";
+@import "doctor_list";
+@import "intro_video_bg";
+@import "footer";
+
+@import "elements";
+@import "./page/blog_part";
+@import "contact";
+
+// breadcrumb scss
+@import "breadcrumb";
+
+.main_menu {
+	.navbar-brand {
+    display: flex;
+    align-items: center;
+    img {
+      width: 50px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "footer";
+
+

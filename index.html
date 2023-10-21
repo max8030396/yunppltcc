@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>雲鵬老人長期照顧中心 | 養護型</title>
+    <link rel="icon" href="img/favicon.jpg" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css" />
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <!-- magnific popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <!-- nice select CSS -->
+    <link rel="stylesheet" href="css/nice-select.css" />
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/slick.css" />
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Material + Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+  </head>
+
+  <body>
+    
+    <div id="app">
+      <!--::header part start::-->
+      <header class="main_menu home_menu">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-12">
+              <nav class="navbar navbar-expand-lg navbar-light">
+                <a
+                  class="d-flex align-item-center navbar-brand"
+                  href="index.html"
+                >
+                  <img src="img/logo.jpg" alt="logo" />
+                  雲鵬老人長期照顧中心
+                </a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div
+                  class="collapse navbar-collapse main-menu-item justify-content-center"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                      <div class="nav-link" @click="scrollTo('service')">服務項目</div>
+                    </li>
+                    <li class="nav-item">
+                      <div class="nav-link" @click="scrollTo('about_us')">關於我們</div>
+                    </li>
+                    <li class="nav-item">
+                      <div class="nav-link" @click="scrollTo('environment')">環境介紹</div>
+                    </li>
+                    <li class="nav-item">
+                      <div class="nav-link" @click="scrollTo('traffic')">交通資訊</div>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="blog.html"
+                        id="navbarDropdown"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        認識雲鵬
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="dep.html"
+                          >雲鵬老人長期照顧中心</a
+                        >
+                        <a class="dropdown-item" href="services.html"
+                          >雲隼居家長照機構</a
+                        >
+                        <a class="dropdown-item" href="elements.html"
+                          >社團法人中華雲鵬展弘協會</a
+                        >
+                        <a class="dropdown-item" href="elements.html"
+                          >祥復長照中心</a
+                        >
+                      </div>
+                    </li> -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://www.1111.com.tw/corp/50580203/" target="_blank">加入我們</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- <a class="btn_2 d-none d-lg-block" href="#">聯絡我們</a> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Header part end-->
+
+      <!-- banner part start-->
+      <section class="banner_part">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-5 col-xl-5">
+              <div class="banner_text">
+                <div class="banner_text_iner">
+                  <h5>提供居住的美好處所</h5>
+                  <h1>最好的照護 & <br />最佳的醫護團隊</h1>
+                  <p>
+                    秉持專業精神，重視每一位長輩之個別化需求，提供全方位之身、心、靈服務；藉由本中心的成立，期能提供長輩有尊嚴並能自主安排生活之幸福家園，更期許機構能成為台灣長照機構頂尖代表
+                  </p>
+                  <a href="#" class="btn_2">預約參觀</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="banner_img">
+                <img src="img/ban.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- banner part start-->
+  
+      <!-- 服務項目 start-->
+      <section ref="service" class="service">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-8">
+              <div class="section_tittle text-center">
+                <h2>服務項目</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-between align-items-center">
+            <div class="col-lg-3 col-sm-12">
+              <div class="single_feature">
+                <div class="single_service">
+                  <span class="single_feature_icon"
+                    ><img src="img/icon/feature_1.svg" alt=""
+                  /></span>
+                  <h4>長期照護</h4>
+                  <p>一些文案</p>
+                </div>
+              </div>
+              <div class="single_feature">
+                <div class="single_service">
+                  <span class="single_feature_icon"
+                    ><img src="img/icon/feature_2.svg" alt=""
+                  /></span>
+                  <h4>居家照顧服務</h4>
+                  <p>一些文案</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+              <div class="single_feature_img d-none d-lg-block">
+                <img src="img/service.png" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-12">
+              <div class="single_feature">
+                <div class="single_service">
+                  <span class="single_feature_icon"
+                    ><img src="img/icon/feature_1.svg" alt=""
+                  /></span>
+                  <h4>喘息服務</h4>
+                  <p>一些文案</p>
+                </div>
+              </div>
+              <div class="single_feature">
+                <div class="single_service">
+                  <span class="single_feature_icon"
+                    ><img src="img/icon/feature_2.svg" alt=""
+                  /></span>
+                  <h4>居家送餐服務</h4>
+                  <p>一些文案</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 服務項目 start-->
+  
+      <!-- 關於我們 start-->
+      <section ref="about_us" class="about_us padding_top">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-md-6 col-lg-6">
+              <div class="about_us_img">
+                <img src="img/Med.png" alt="" />
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-5">
+              <div class="about_us_text">
+                <h2>關於我們</h2>
+                <p>
+                  本機構包含桃園市私立雲隼居家長照機構，桃園市私立雲鵬老人長期照顧中心，社團法人中華雲鵬展弘協會，祥復長照中心，是由一群熱心、急公好義、理念相近的人所組成，以「建立一個自己將來想要居住的美好處所」為理念
+                </p>
+                <!-- <a class="btn_2" href="#">learn more</a> -->
+                <div class="banner_item">
+                  <div class="single_item">
+                    <img src="img/icon/banner_1.svg" alt="" />
+                    <h5>醫療服務</h5>
+                  </div>
+                  <div class="single_item">
+                    <img src="img/icon/banner_2.svg" alt="" />
+                    <h5>專業照顧</h5>
+                  </div>
+                  <div class="single_item">
+                    <img src="img/icon/banner_3.svg" alt="" />
+                    <h5>進出管理</h5>
+                  </div>
+                </div>
+                <div class="banner_item">
+                  <div class="single_item">
+                    <img src="img/icon/banner_1.svg" alt="" />
+                    <h5>門診接送</h5>
+                  </div>
+                  <div class="single_item">
+                    <img src="img/icon/banner_2.svg" alt="" />
+                    <h5>失智照顧</h5>
+                  </div>
+                  <div class="single_item">
+                    <img src="img/icon/banner_3.svg" alt="" />
+                    <h5>中風復建</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 關於我們 end-->
+
+      <!-- 認識雲鵬 start-->
+      <section ref="company" class="company">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-3 col-md-12">
+              <div class="card">
+                <img src="img/logo.jpg" class="w-100 card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">雲鵬老人長期照顧中心</h5>
+                  <p class="card-text">這是簡介，請自行填寫</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12">
+              <div class="card">
+                <img src="img/logo.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">雲隼居家長照機構</h5>
+                  <p class="card-text">這是簡介，請自行填寫</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12">
+              <div class="card">
+                <img src="img/logo.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">社團法人中華雲鵬展弘協會</h5>
+                  <p class="card-text">這是簡介，請自行填寫</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12">
+              <div class="card">
+                <img src="img/logo.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">祥復長照中心</h5>
+                  <p class="card-text">這是簡介，請自行填寫</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 認識雲鵬 end -->
+
+      <!--::環境介紹 start:: -> check_in --> 
+      <section ref="environment" class="environment_part">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-8">
+              <div class="section_tittle text-center">
+                <h2>環境介紹</h2>
+                <span>一些文案</span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div id="carouselExampleCaptions" class="w-100 carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class=""></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1" class=""></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2" class="active"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item">
+                  <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="佔位符：第一張投影片"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="47%" y="50%" fill="#555">First slide</text></svg>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-white">第1張投影片</h5>
+                    <p class="text-white">第1張投影片說明</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="佔位符：第二張投影片"><title>Placeholder</title><rect width="100%" height="100%" fill="#666"></rect><text x="47%" y="50%" fill="#444">Second slide</text></svg>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-white">第2張投影片</h5>
+                    <p class="text-white">第2張投影片說明</p>
+                  </div>
+                </div>
+                <div class="carousel-item active">
+                  <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="佔位符：第三張投影片"><title>Placeholder</title><rect width="100%" height="100%" fill="#555"></rect><text x="47%" y="50%" fill="#333">Third slide</text></svg>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-white">第3張投影片</h5>
+                    <p class="text-white">第3張投影片說明</p>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以前的</font></font></span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下一個</font></font></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--::環境介紹 end::-->
+  
+      <!--::房型介紹 start:: -> check_in --> 
+      <section ref="rooms" class="rooms_part">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-8">
+              <div class="section_tittle text-center">
+                <h2>房型介紹</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div v-for="(room, i) in rooms" class="col-sm-6 col-lg-3">
+              <div class="rooms_item">
+                <div class="rooms_img">
+                  <img :src="room.currentImg" :alt="room.alt" />
+                  <div class="room_icon">
+                    <ul>
+                      <li v-for="(img, imgKey) in room.roomImgs">
+                        <div @click="room.currentImg = img">{{(imgKey + 1)}}</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="rooms_text">
+                  <div class="rooms_text">
+                    <h3>{{room.room}}</h3>
+                    <p>{{room.context}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--::房型介紹 end::-->
+  
+      <!--::入住流程 start:: -> check_in --> 
+      <section ref="check_in" class="check_in_part">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-8">
+              <div class="section_tittle text-center">
+                <h2>入住流程</h2>
+              </div>
+            </div>
+          </div>
+          <div class="check_in_item_wrapper">
+            <div class="row align-items-center justify-content-around">
+              <div class="check_in_item">
+                <div class="item_number">1</div>
+                <div class="item_text">預約參觀</div>
+                <div class="chevron-right"></div>
+              </div>
+              <div class="check_in_item">
+                <div class="item_number">2</div>
+                <div class="item_text">面談評估</div>
+                <div class="chevron-right"></div>
+              </div>
+              <div class="check_in_item">
+                <div class="item_number">3</div>
+                <div class="item_text">健康檢查</div>
+                <div class="chevron-right"></div>
+              </div>
+              <div class="check_in_item">
+                <div class="item_number">4</div>
+                <div class="item_text">簽約</div>
+                <div class="chevron-right"></div>
+              </div>
+              <div class="check_in_item">
+                <div class="item_number">5</div>
+                <div class="item_text">入住</div>
+              </div>
+            </div>
+            <div class="content">
+              聯絡專線<span class="material-icons">call </span>：
+              
+              <a href="tel:0912345678">0912345678</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--::入住流程 end::-->
+  
+      <!--::活動花絮 start::-->
+      <section ref="blog" class="blog_part">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-8">
+              <div class="section_tittle text-center">
+                <h2>活動花絮</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="single-home-blog">
+                <div class="card">
+                  <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active carousel-item-left">
+                        <img
+                          src="img/event/event_01.jpg"
+                          class="card-img-top"
+                          alt="blog"
+                        />
+                      </div>
+                      <div class="carousel-item carousel-item-next carousel-item-left">
+                        <img
+                          src="img/event/event_02.jpg"
+                          class="card-img-top"
+                          alt="blog"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="img/event/event_03.jpg"
+                          class="card-img-top"
+                          alt="blog"
+                        />
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                  
+                  <div class="card-body">
+                    <a href="blog.html">
+                      <h5 class="card-title">活動名稱</h5>
+                    </a>
+                    <ul>
+                      <li><span class="ti-user"></span>舉辦單位</li>
+                      <li><span class="ti-time"></span>舉辦時間</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="single-home-blog">
+                <div class="card">
+                  <div id="carouselExampleControls3" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active carousel-item-left">
+                        <img
+                          src="img/event/event_04.jpg"
+                          class="card-img-top"
+                          alt="blog"
+                        />
+                      </div>
+                      <div class="carousel-item carousel-item-next carousel-item-left">
+                        <img
+                          src="img/event/event_05.jpg"
+                          class="card-img-top"
+                          alt="blog"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="img/event/event_06.jpg"
+                          class="card-img-top"
+                          alt="blog"
+                        />
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls3" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls3" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <a href="blog.html">
+                      <h5 class="card-title">活動名稱</h5>
+                    </a>
+                    <ul>
+                      <li><span class="ti-user"></span>舉辦單位</li>
+                      <li><span class="ti-time"></span>舉辦時間</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--::活動花絮 end::-->
+  
+      <!--::交通資訊 start::-->
+      <section ref="traffic" class="traffic_part section_padding">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-8">
+              <div class="section_tittle text-center">
+                <h2>交通資訊</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <iframe
+                src="https://maps.google.com.tw/maps?f=1&amp;hl=zh-TW&amp;geocode=&amp;q=桃園市私立雲鵬老人長期照顧中心（養護型）&amp;z=15&amp;output=embed&amp;t="
+                width="100%"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                alt="網站地圖"
+                title="網站地圖"
+              ></iframe>
+            </div>
+            <div class="col-sm-6 mt-5 mt-lg-0">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!4v1697557318251!6m8!1m7!1slOaOIktMhap861q4ktGbZA!2m2!1d24.90843261128285!2d121.1573091910097!3f191.63046!4f0!5f0.7820865974627469"
+                width="100%"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                alt="網站地圖"
+                title="網站地圖"
+              ></iframe>
+            </div>
+          </div>
+          
+       
+        </div>
+      </section>
+      <!--::交通資訊 end::-->
+  
+      <!-- footer part start-->
+      <footer class="footer-area">
+        <div class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 single-footer-widget">
+                <h4 class="mb-3">關於我們</h4>
+                <p>雲鵬老人長期照顧中心 台灣326 桃園市楊梅區中山北路一段319號(<a
+                  href="https://maps.app.goo.gl/U9jxkS1ygTz69RcE8"
+                  target="_blank"
+                  >地圖</a
+                >)</p>
+                <p>週一 至 週五 上午09:00 ~ 12:00 | 下午13:00 ~ 18:00</p>
+              </div>
+              <div class="col-lg-5 single-footer-widget">
+                <div class="d-flex">
+                  <h5 class="mr-lg-5 mr-3" @click="scrollTo('environment')">環境介紹</h5>
+                  <h5 class="mr-lg-5 mr-3" @click="scrollTo('rooms')">房型介紹</h5>
+                  <h5 class="mr-lg-5 mr-3" @click="scrollTo('check_in')">入住流程</h5>
+                  
+                  <h5 class="mr-lg-5 mr-3"><a class="" href="https://www.1111.com.tw/corp/50580203/" target="_blank">加入我們</a></h5>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="container">
+            <div class="row align-items-center">
+              <p class="footer-text m-0 col-lg-8 col-md-12">
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;
+                {{ getYear() }}
+                All rights reserved by max</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="line" class="fixedIcon">
+          <a href="https://www.facebook.com/up888?locale=zh_TW" target="_blank">
+            <svg width="50px" height="50px" viewBox="0 0 100 100"><path fill="#3AAE36" d="M97.04,84.102c0,6.335-5.161,11.472-11.525,11.472H14.441c-6.365,0-11.525-5.137-11.525-11.472V17.898 c0-6.336,5.16-11.472,11.525-11.472h71.073c6.364,0,11.525,5.136,11.525,11.472V84.102z"></path><path fill="#FFFFFF" d="M86.295,50.188c0.168-0.885,0.251-1.63,0.289-2.215c0.063-0.964-0.009-2.396-0.034-2.844 C85.662,29.679,69.633,17.37,49.99,17.37c-20.213,0-36.599,13.033-36.599,29.111c0,14.777,13.843,26.983,31.778,28.861 c1.096,0.114,1.887,1.104,1.765,2.199l-0.763,6.873c-0.173,1.561,1.439,2.695,2.854,2.014c15.152-7.313,24.212-14.836,29.624-21.354 c0.984-1.187,4.194-5.685,4.85-6.865C84.887,55.7,85.844,53.007,86.295,50.188z"></path><path fill="#3DAF36" d="M29.865,52.378V40.116c0-1.034-0.838-1.872-1.872-1.872l0,0c-1.034,0-1.872,0.838-1.872,1.872V54.25 c0,1.034,0.838,1.872,1.872,1.872h7.488c1.034,0,1.872-0.838,1.872-1.872l0,0c0-1.033-0.838-1.872-1.872-1.872H29.865z"></path><path fill="#3DAF36" d="M41.413,56.122h-0.818c-0.808,0-1.463-0.655-1.463-1.463V39.707c0-0.808,0.655-1.463,1.463-1.463h0.818 c0.808,0,1.463,0.655,1.463,1.463v14.953C42.875,55.467,42.221,56.122,41.413,56.122z"></path><path fill="#3DAF36" d="M56.541,40.116v8.635c0,0-7.476-9.752-7.59-9.88c-0.357-0.401-0.884-0.648-1.468-0.625 c-1.018,0.039-1.799,0.929-1.799,1.948V54.25c0,1.033,0.838,1.872,1.873,1.872l0,0c1.034,0,1.872-0.839,1.872-1.872v-8.583 c0,0,7.589,9.836,7.702,9.943c0.331,0.313,0.776,0.507,1.267,0.512c1.039,0.009,1.89-0.91,1.89-1.95V40.116 c0-1.034-0.839-1.872-1.872-1.872l0,0C57.38,38.244,56.541,39.082,56.541,40.116z"></path><path fill="#3DAF36" d="M74.326,40.116L74.326,40.116c0-1.034-0.838-1.872-1.871-1.872h-7.489c-1.034,0-1.872,0.838-1.872,1.872 V54.25c0,1.034,0.838,1.872,1.872,1.872h7.489c1.033,0,1.871-0.838,1.871-1.872l0,0c0-1.033-0.838-1.872-1.871-1.872h-5.617v-3.323 h5.617c1.033,0,1.871-0.838,1.871-1.873l0,0c0-1.034-0.838-1.872-1.871-1.872h-5.617v-3.323h5.617 C73.488,41.988,74.326,41.15,74.326,40.116z"></path></svg>
+          </a>
+        </div>
+        <div id="facebook" class="fixedIcon">
+          <a href="https://www.facebook.com/up888?locale=zh_TW" target="_blank">
+            <svg width="50px" height="50px" viewBox="0 0 100 100"><path fill="#4062A7" d="M85.372,10.073H14.625c-2.422,0.001-4.386,1.966-4.386,4.389v70.747c0.001,2.421,1.966,4.387,4.389,4.385 h70.744c2.423,0.002,4.388-1.964,4.389-4.387v-0.002V14.458C89.76,12.036,87.795,10.072,85.372,10.073z"></path><path fill="#FFFFFF" d="M65.143,89.594V58.842h10.368l1.553-12.037H65.143v-7.666c0-3.477,0.966-5.846,5.952-5.846h6.319V22.556 c-1.101-0.146-4.872-0.473-9.261-0.473c-9.163,0-15.435,5.591-15.435,15.864v8.858H42.39v12.037h10.329v30.752H65.143z"></path></svg>
+          </a>
+        </div>
+      </footer>
+      <!-- footer part end-->
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js" type="application/javascript"></script>
+    <!-- jquery plugins here-->
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- owl carousel js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <!-- contact js -->
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/contact.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+
+  </body>
+</html>
