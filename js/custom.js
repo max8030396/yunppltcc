@@ -66,7 +66,7 @@ $(document).ready(function() {
           },
           { 
             eventId: 'event01',
-            eventName: '雲鵬長照中心',
+            eventName: '新年活動',
             eventDate: '2023/01/21',
             eventOrganizer: '雲鵬長照中心',
             imgs: [
