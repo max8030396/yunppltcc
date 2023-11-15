@@ -15,14 +15,8 @@
 .main_menu {
 	.navbar-brand {
 		padding: 0rem !important;
-
-		@media #{$small_mobile} {
-			max-width: 120px;
-		}
-
-		@media #{$large_mobile} {
-			max-width: 130px;
-		}
+		max-width: 80%;
+		.navbar-brand-name {}
 	}
 
 	.navbar-toggler {
