@@ -4,9 +4,8 @@
 	// left: 0;
 	// top: 0;
 	// width: 100%;
-	z-index: 999;
 	position: fixed;
-	z-index: 9999 !important;
+	z-index: 1030;
 	width: 100%;
 	background-color: #fff;
 	box-shadow: 0px 10px 15px rgba(0,0,0,.05);
@@ -80,7 +79,9 @@
 				&:hover {
 					color: $btn_bg;
 				}
-
+				@media #{$tab} {
+					padding: 16px !important;
+				}
 			}
 
 		}
@@ -160,10 +161,15 @@
 		text-align: left !important;
 
 		.nav-item {
+			width: 100%;
+    	border-bottom: 1px solid #dddddd;
 			padding: 5px 15px !important;
 
 			a {
 				padding: 5px 15px !important;
+			}
+			@media #{$tab} {
+				padding: 0 !important;
 			}
 		}
 	}

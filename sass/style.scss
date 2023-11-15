@@ -39,6 +39,8 @@
 // breadcrumb scss
 @import "breadcrumb";
 
+@import "footer";
+
 .main_menu {
 	.navbar-brand {
     display: flex;
@@ -49,19 +51,92 @@
   }
 }
 
+#imageModel {
+  .modal-dialog {
+    max-width: 80vw !important;
+    @media (max-width: 991px) {
+      width: 80vw;
+      margin: 0.5rem auto;
+    }
+  }
+  .modal-content {
+    position: unset;
+    background-color: unset;
+   
+    .closeBtn {
+      position: absolute;
+      top: 0;
+      left: 105%;
+      background-color: #000;
+      opacity: 1;
+      color: #fff;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
+      @media (max-width: 991px) {
+        top: 2%;
+        left: 95%;
+      }
+      span {
+        width: 16px;
+        height: 16px;
+        font-size: 16px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+      border: none;
+    }
+    .nextBtn span, .prevBtn span {
+      color: #dbdbdb;
+      font-size: 60px;
 
+    }
+    .nextBtn {
+      position: absolute;
+      left: 105%;
+      top: 50%;
+      border: none;
+      opacity: 0.5;
+      background-color: transparent;
+      transition: opacity ease-in-out 150ms;
+      &:hover {
+        opacity: 1;
+      }
+      @media (max-width: 991px) {
+        left: 95%;
+      }
+    }
+    .prevBtn {
+      position: absolute;
+      left: -10%;
+      top: 50%;
+      border: none;
+      opacity: 0.5;
+      background-color: transparent;
+      transition: opacity ease-in-out 150ms;
+      &:hover {
+        opacity: 1;
+      }
+      @media (max-width: 991px) {
+        left: -18%;
+      }
+    }
+    .item-img {
+      max-height: 80vh;
+      object-fit: contain;
+    }
+    .carousel-inner {
+      width: 65vw;
 
-
-
-
-
-
-
-
-
-
-
-@import "footer";
-
-
+      img {
+        object-fit: contain;
+        max-height: 80vh;
+      }
+    }
+  }
+}

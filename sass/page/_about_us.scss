@@ -6,6 +6,7 @@
   background-position: left bottom;
   background-repeat: no-repeat;
   background-size: 50% 90%;
+  padding-top: 100px;
   @media #{$tab} {
     padding: 70px 0 0;
     // background-image: none;
@@ -163,9 +164,10 @@
       }
     }
 
-    img {
+    svg {
       width: 44px;
       margin-bottom: 12px;
+      fill: #f0aabc;
     }
 
     h5 {

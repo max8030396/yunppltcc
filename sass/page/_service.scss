@@ -1,7 +1,8 @@
 /**************** service_part css start ****************/
 .service {
+   padding-top: 100px;
    @media #{$tab} {
-      padding: 70px 0;
+      margin-top: -70px;
    }
 
    @media #{$medium_device} {
@@ -70,11 +71,13 @@
    }
 
    .single_service {
+      height: 340px;
       @include transform_time(1s);
       position: relative;
 
       @media #{$tab} {
          margin-top: 0;
+         height: auto;
       }
 
       @media #{$medium_device} {

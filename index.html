@@ -3,11 +3,31 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
+    <meta charset="utf-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
     />
-    <title>雲鵬老人長期照顧中心 | 養護型</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="keywords"
+      content="長照2.0,長期照護,老人長照,雲鵬,楊梅長照,雲鵬老人長期照顧中心,祥復長照,桃園長照,桃園長期照護中心,桃園長者照護服務,桃園專業長照機構,專業長照機構,桃園老人照護,老年人護理之家,雲鵬長照機構,雲隼居家長照機構,社團法人中華雲鵬展弘協會,雲鵬老人長期照顧中心,養護中心,養老機構,桃園,桃園居家服務,桃園社工服務"
+    />
+    <meta
+      name="description"
+      content="秉持專業精神，重視每一位長輩之個別化需求，提供全方位之身、心、靈服務；藉由本中心的成立，期能提供長輩有尊嚴並能自主安排生活之幸福家園，更期許機構能成為台灣長照機構頂尖代表"
+    />
+    <meta property="og:url" content="https://yunpp-ltcc.com/" />
+    <meta property="og:title" content="桃園市雲鵬老人長期照顧中心 | 桃園長照機構,楊梅長照機構,楊梅居家長照服務,雲鵬,桃園居家長照服務,護理之家,養護中心,養老機構,桃園,楊梅,社工服務,養護型" />
+    <meta
+      property="og:description"
+      content="秉持專業精神，重視每一位長輩之個別化需求，提供全方位之身、心、靈服務；藉由本中心的成立，期能提供長輩有尊嚴並能自主安排生活之幸福家園，更期許機構能成為台灣長照機構頂尖代表"
+    />
+    <meta
+      property="og:image"
+      content="https://yunpp-ltcc.com/img/logo.jpg"
+    />
+    <title>桃園市雲鵬老人長期照顧中心 | 養護型</title>
     <link rel="icon" href="img/favicon.jpg" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -31,6 +51,7 @@
     <!-- Material + Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
   </head>
 
@@ -67,17 +88,17 @@
                   id="navbarSupportedContent"
                 >
                   <ul class="navbar-nav align-items-center">
-                    <li class="nav-item">
-                      <div class="nav-link" @click="scrollTo('service')">服務項目</div>
+                    <li class="nav-item" @click="toggleMenu('service')">
+                      <div class="nav-link">服務項目</div>
                     </li>
-                    <li class="nav-item">
-                      <div class="nav-link" @click="scrollTo('about_us')">關於我們</div>
+                    <li class="nav-item" @click="toggleMenu('about_us')">
+                      <div class="nav-link">關於我們</div>
                     </li>
-                    <li class="nav-item">
-                      <div class="nav-link" @click="scrollTo('environment')">環境介紹</div>
+                    <li class="nav-item" @click="toggleMenu('environment')">
+                      <div class="nav-link">環境介紹</div>
                     </li>
-                    <li class="nav-item">
-                      <div class="nav-link" @click="scrollTo('traffic')">交通資訊</div>
+                    <li class="nav-item" @click="toggleMenu('traffic')">
+                      <div class="nav-link">交通資訊</div>
                     </li>
                     <!-- <li class="nav-item dropdown">
                       <a
@@ -131,7 +152,7 @@
                   <p>
                     秉持專業精神，重視每一位長輩之個別化需求，提供全方位之身、心、靈服務；藉由本中心的成立，期能提供長輩有尊嚴並能自主安排生活之幸福家園，更期許機構能成為台灣長照機構頂尖代表
                   </p>
-                  <a href="#" class="btn_2">預約參觀</a>
+                  <!-- <a href="#" class="btn_2">預約參觀</a> -->
                 </div>
               </div>
             </div>
@@ -159,20 +180,24 @@
             <div class="col-lg-3 col-sm-12">
               <div class="single_feature">
                 <div class="single_service">
-                  <span class="single_feature_icon"
-                    ><img src="img/icon/feature_1.svg" alt=""
-                  /></span>
+                  <span class="single_feature_icon">
+                    <svg height="25" fill="#f3a9bc" viewBox="0 0 640 512">
+                      <path d="M483.2 9.6L524 64h92c13.3 0 24 10.7 24 24s-10.7 24-24 24H512c-7.6 0-14.7-3.6-19.2-9.6L468.7 70.3l-47 99.9c-3.7 7.8-11.3 13.1-19.9 13.7s-16.9-3.4-21.7-10.6L339.2 112H216c-13.3 0-24-10.7-24-24s10.7-24 24-24H352c8 0 15.5 4 20 10.7l24.4 36.6 45.9-97.5C445.9 6.2 453.2 1 461.6 .1s16.6 2.7 21.6 9.5zM320 160h12.7l20.7 31.1c11.2 16.8 30.6 26.3 50.7 24.8s37.9-13.7 46.5-32L461.9 160H544c53 0 96 43 96 96V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V448H352 320 64v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V96C0 78.3 14.3 64 32 64s32 14.3 32 32V352H288V192c0-17.7 14.3-32 32-32zm-144 0a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"/>
+                    </svg>
+                  </span>
                   <h4>長期照護</h4>
-                  <p>一些文案</p>
+                  <p>提供綜合性與連續性的服務，其服務內容可從預防、診斷、治療、復健、支持性、維護性以致社會性之服務；其服務對象不僅包括個案本身，更應考慮到照顧者的需要」。需要長期照顧的對象包括：慢性疾病病人、身心障礙失能者及其家庭照顧者；服務範圍包括：生活照顧、醫療（治療及診斷）、護理、復健、社會支持等，其層面涵蓋社會性照顧及醫療性照護。</p>
                 </div>
               </div>
               <div class="single_feature">
                 <div class="single_service">
-                  <span class="single_feature_icon"
-                    ><img src="img/icon/feature_2.svg" alt=""
-                  /></span>
-                  <h4>居家照顧服務</h4>
-                  <p>一些文案</p>
+                  <span class="single_feature_icon">
+                    <svg height="25" fill="#f3a9bc" viewBox="0 0 640 512">
+                      <path d="M64 64a64 64 0 1 1 128 0A64 64 0 1 1 64 64zM25.9 233.4C29.3 191.9 64 160 105.6 160h44.8c27 0 51 13.4 65.5 34.1c-2.7 1.9-5.2 4-7.5 6.3l-64 64c-21.9 21.9-21.9 57.3 0 79.2L192 391.2V464c0 26.5-21.5 48-48 48H112c-26.5 0-48-21.5-48-48V348.3c-26.5-9.5-44.7-35.8-42.2-65.6l4.1-49.3zM448 64a64 64 0 1 1 128 0A64 64 0 1 1 448 64zM431.6 200.4c-2.3-2.3-4.9-4.4-7.5-6.3c14.5-20.7 38.6-34.1 65.5-34.1h44.8c41.6 0 76.3 31.9 79.7 73.4l4.1 49.3c2.5 29.8-15.7 56.1-42.2 65.6V464c0 26.5-21.5 48-48 48H496c-26.5 0-48-21.5-48-48V391.2l47.6-47.6c21.9-21.9 21.9-57.3 0-79.2l-64-64zM272 240v32h96V240c0-9.7 5.8-18.5 14.8-22.2s19.3-1.7 26.2 5.2l64 64c9.4 9.4 9.4 24.6 0 33.9l-64 64c-6.9 6.9-17.2 8.9-26.2 5.2s-14.8-12.5-14.8-22.2V336H272v32c0 9.7-5.8 18.5-14.8 22.2s-19.3 1.7-26.2-5.2l-64-64c-9.4-9.4-9.4-24.6 0-33.9l64-64c6.9-6.9 17.2-8.9 26.2-5.2s14.8 12.5 14.8 22.2z"/>
+                    </svg>
+                  </span>
+                  <h4>喘息服務</h4>
+                  <p>藉由受過訓練之照顧服務員至個案家中，提供個案身體照顧服務，包含協助如廁、沐浴、穿換衣服、口腔清潔、進食、服藥、翻身、拍背、簡單被動式肢體關節活動、上下床、陪同運動、協助使用日常生活輔助器具及其他服務。</p>
                 </div>
               </div>
             </div>
@@ -184,20 +209,25 @@
             <div class="col-lg-3 col-sm-12">
               <div class="single_feature">
                 <div class="single_service">
-                  <span class="single_feature_icon"
-                    ><img src="img/icon/feature_1.svg" alt=""
-                  /></span>
-                  <h4>喘息服務</h4>
-                  <p>一些文案</p>
+                  <span class="single_feature_icon">
+                    <svg height="25" fill="#f3a9bc" viewBox="0 0 640 512">
+                      <path d="M112 0C85.5 0 64 21.5 64 48V96H16c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 272c8.8 0 16 7.2 16 16s-7.2 16-16 16H64 48c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 240c8.8 0 16 7.2 16 16s-7.2 16-16 16H64 16c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 208c8.8 0 16 7.2 16 16s-7.2 16-16 16H64V416c0 53 43 96 96 96s96-43 96-96H384c0 53 43 96 96 96s96-43 96-96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V288 256 237.3c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7H416V48c0-26.5-21.5-48-48-48H112zM544 237.3V256H416V160h50.7L544 237.3zM160 368a48 48 0 1 1 0 96 48 48 0 1 1 0-96zm272 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0z"/>
+                    </svg>
+                  </span>
+                  <h4>居家送餐服務</h4>
+                  <p>居家失能長者送餐到宅服務的對象有符合長照身份的低/中低收入長者；不與子女同住的類獨居長者及地處偏遠餐飲業者無法服務的長者，利用送餐到宅的服務送飯給無法購買或無法準備餐食的長輩減少營養風險，服務中包含送餐者與長者互動及關懷不只是解決長輩溫飽需求，更是建立與長輩生命的連結。</p>
                 </div>
               </div>
+
               <div class="single_feature">
                 <div class="single_service">
-                  <span class="single_feature_icon"
-                    ><img src="img/icon/feature_2.svg" alt=""
-                  /></span>
-                  <h4>居家送餐服務</h4>
-                  <p>一些文案</p>
+                  <span class="single_feature_icon">
+                    <svg height="25" fill="#f3a9bc" viewBox="0 0 576 512">
+                      <path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c.2 35.5-28.5 64.3-64 64.3H128.1c-35.3 0-64-28.7-64-64V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L416 100.7V64c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V185l52.8 46.4c8 7 12 15 11 24zM272 192c-8.8 0-16 7.2-16 16v48H208c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h48v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V320h48c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H320V208c0-8.8-7.2-16-16-16H272z"/>
+                    </svg>
+                  </span>
+                  <h4>居家服務</h4>
+                  <p>受過專業訓練的照顧服務員到家中協助失能者，包含基本身體清潔、基本日常照顧、測量生命徵象、餵食、餐食照顧、協助沐浴及洗頭、陪同外出或就醫等服務。</p>
                 </div>
               </div>
             </div>
@@ -218,35 +248,60 @@
             <div class="col-md-6 col-lg-5">
               <div class="about_us_text">
                 <h2>關於我們</h2>
-                <p>
-                  本機構包含桃園市私立雲隼居家長照機構，桃園市私立雲鵬老人長期照顧中心，社團法人中華雲鵬展弘協會，祥復長照中心，是由一群熱心、急公好義、理念相近的人所組成，以「建立一個自己將來想要居住的美好處所」為理念
+                <p class="mb-1">
+                  雲鵬為馬雲鵬先生之名諱，為1949隨政府撤退來台之軍人，為負責人的外公。馬雲鵬先生在世時，感懷軍中同袍一身戎馬在老年時接受政府照顧在榮民之家或私人安養院中孤獨老去，晚年投入長期照顧之志工服務，直至辭世還刻刻交代後輩要致力於台灣老人安養之議題與品質。 馬雲鵬之後輩遂於99年起致力雲鵬長期照顧中心之籌設，於102年開始硬體設施之規劃整修，歷時2年多於104年4月28日取得桃園市政府立案證書，開始收案服務社區及所有需要服務之長者，同時投入輔具的發展、政策之推廣，並致力於非正式資源之推動，以期整合所有相關團體、單位、個人，為我國長期照護之未來盡一份心力，在地深根、在地老化；建立一個全人、全心、全程、全家、全隊、全社區之六全，去機構式照顧體系。
                 </p>
                 <!-- <a class="btn_2" href="#">learn more</a> -->
                 <div class="banner_item">
                   <div class="single_item">
-                    <img src="img/icon/banner_1.svg" alt="" />
+                    <svg viewBox="0 0 511.392 511.392">
+                      <path d="M238.496,20.592l-7.872-13.92C195.936,26.368,156.96,41.2,121.344,41.104
+                        c-14.112,0-27.728-2.224-40.784-7.216c-5.632-2.16-11.456-3.2-17.152-3.2C38,30.72,15.776,51.168,15.696,78.544V192v7.04
+                        c0,145.04,96.144,272.496,235.6,312.352h8.8c139.456-39.856,235.6-167.312,235.6-312.352V192V78.544
+                        c-0.08-27.376-22.304-47.808-47.728-47.856c-5.68,0-11.52,1.04-17.152,3.2c-13.056,4.992-26.656,7.216-40.768,7.216
+                        c-35.616,0.096-74.592-14.736-109.28-34.432C273.024,2.272,264.368,0,255.696,0s-17.328,2.272-25.088,6.672L238.496,20.592
+                        l7.888,13.92c3.056-1.728,6.192-2.512,9.312-2.512s6.24,0.784,9.328,2.528c37.472,21.12,80.72,38.48,125.024,38.576
+                        c17.488,0,35.136-2.8,52.208-9.344l5.712-1.072c8.24,0.032,15.712,6.704,15.728,15.856V192v7.04
+                        c0,130.752-86.672,245.664-212.4,281.584l4.4,15.376l4.4-15.392c-125.728-35.904-212.4-150.816-212.4-281.568V192V78.544
+                        c0.016-9.152,7.472-15.824,15.728-15.872l5.712,1.088c17.072,6.528,34.72,9.344,52.208,9.344
+                        c44.304-0.096,87.552-17.456,125.024-38.576L238.496,20.592z"/>
+                      <path d="M255.696,65.904c-56.176,29.616-119.76,50.496-176,35.008v98.128
+                        c0,111.216,71.696,210.752,176,246.656c104.304-35.904,176-135.44,176-246.656v-98.128
+                        C375.488,116.384,311.904,95.536,255.696,65.904z M335.696,256h-64v64h-32v-64h-64v-32h64v-64h32v64h64V256z"/>
+                    </svg>
+
                     <h5>醫療服務</h5>
                   </div>
-                  <div class="single_item">
-                    <img src="img/icon/banner_2.svg" alt="" />
+                  <div class="single_item"> 
+                    <svg viewBox="0 -960 960 960">
+                      <path d="M540-80q-108 0-184-76t-76-184v-23q-86-14-143-80.5T80-600v-240h120v-40h80v160h-80v-40h-40v160q0 66 47 113t113 47q66 0 113-47t47-113v-160h-40v40h-80v-160h80v40h120v240q0 90-57 156.5T360-363v23q0 75 52.5 127.5T540-160q75 0 127.5-52.5T720-340v-67q-35-12-57.5-43T640-520q0-50 35-85t85-35q50 0 85 35t35 85q0 39-22.5 70T800-407v67q0 108-76 184T540-80Zm220-400q17 0 28.5-11.5T800-520q0-17-11.5-28.5T760-560q-17 0-28.5 11.5T720-520q0 17 11.5 28.5T760-480Zm0-40Z"/>
+                    </svg>
                     <h5>專業照顧</h5>
                   </div>
                   <div class="single_item">
-                    <img src="img/icon/banner_3.svg" alt="" />
+                    <svg viewBox="0 -960 960 960">
+                      <path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z"/>
+                    </svg>
                     <h5>進出管理</h5>
                   </div>
                 </div>
                 <div class="banner_item">
                   <div class="single_item">
-                    <img src="img/icon/banner_1.svg" alt="" />
+                    <svg viewBox="0 -960 960 960">
+                      <path d="M260-720q-33 0-56.5-23.5T180-800q0-33 23.5-56.5T260-880q33 0 56.5 23.5T340-800q0 33-23.5 56.5T260-720ZM200-80v-280h-80v-240q0-33 23.5-56.5T200-680h120q33 0 56.5 23.5T400-600v78q-63 36-101.5 100T260-280q0 57 21 107.5T340-84v4H200Zm340 0q-83 0-141.5-58.5T340-280q0-67 39.5-118.5T480-470v87q-27 16-43.5 43T420-280q0 50 35 85t85 35q50 0 85-35t35-85h80q0 83-58.5 141.5T540-80Zm297-92-99-148H520v-320h80v240h182l122 184-67 44Z"/>
+                    </svg>
                     <h5>門診接送</h5>
                   </div>
                   <div class="single_item">
-                    <img src="img/icon/banner_2.svg" alt="" />
+                    <svg viewBox="0 -960 960 960">
+                      <path d="M0-240v-63q0-43 44-70t116-27q13 0 25 .5t23 2.5q-14 21-21 44t-7 48v65H0Zm240 0v-65q0-32 17.5-58.5T307-410q32-20 76.5-30t96.5-10q53 0 97.5 10t76.5 30q32 20 49 46.5t17 58.5v65H240Zm540 0v-65q0-26-6.5-49T754-397q11-2 22.5-2.5t23.5-.5q72 0 116 26.5t44 70.5v63H780Zm-455-80h311q-10-20-55.5-35T480-370q-55 0-100.5 15T325-320ZM160-440q-33 0-56.5-23.5T80-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T160-440Zm640 0q-33 0-56.5-23.5T720-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T800-440Zm-320-40q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm0-80q17 0 28.5-11.5T520-600q0-17-11.5-28.5T480-640q-17 0-28.5 11.5T440-600q0 17 11.5 28.5T480-560Zm1 240Zm-1-280Z"/>
+                    </svg>
                     <h5>失智照顧</h5>
                   </div>
                   <div class="single_item">
-                    <img src="img/icon/banner_3.svg" alt="" />
+                    <svg viewBox="0 -960 960 960">
+                      <path d="m520-120 34-331q-57-15-86-39.5T410-544l-95 94 85 85v245h-80v-210l-31-28 7 54-147 189-63-49 126-162-57-112q-8-17-9-42.5t17-43.5l134-132q12-12 26.5-18t29.5-6q24 0 38 9t19 14l80 79q27 27 66 42.5t84 15.5h66q23 0 40 15.5t19 38.5l26 254q13 8 21 21.5t8 30.5q0 25-17.5 42.5T760-100q-25 0-43-17.5T699-160q0-17 8-30.5t22-21.5l-5-48H594l-14 140h-60Zm-20-540q-33 0-56.5-23.5T420-740q0-33 23.5-56.5T500-820q33 0 56.5 23.5T580-740q0 33-23.5 56.5T500-660Zm100 340h118l-14-140h-89l-15 140Z"/>
+                    </svg>
                     <h5>中風復建</h5>
                   </div>
                 </div>
@@ -260,44 +315,45 @@
       <!-- 認識雲鵬 start-->
       <section ref="company" class="company">
         <div class="container">
-          <div class="row align-items-center">
+          <div class="row align-items-stretch">
             <div class="col-lg-3 col-md-12">
               <div class="card">
-                <img src="img/logo.jpg" class="w-100 card-img-top" alt="...">
+                <img src="img/logo.jpg" class="card-img-top" alt="雲鵬老人長期照顧中心">
                 <div class="card-body">
                   <h5 class="card-title">雲鵬老人長期照顧中心</h5>
-                  <p class="card-text">這是簡介，請自行填寫</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <p class="card-text">本機構是由一群熱心、急公好義、理念相近的人所組成，以「建立一個自己將來想要居住的美好處所」為理念，秉持專業精神，重視每一位長輩之個別化需求，提供全方位之身、心、靈服務。
+                  </p>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-12">
               <div class="card">
-                <img src="img/logo.jpg" class="card-img-top" alt="...">
+                <img src="img/logo.jpg" class="card-img-top" alt="雲隼居家長照機構">
                 <div class="card-body">
                   <h5 class="card-title">雲隼居家長照機構</h5>
-                  <p class="card-text">這是簡介，請自行填寫</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <p class="card-text">雲鵬旗下特約喘息服務機構，住宿式長照機構接受短暫照顧、停留，由機構工作人員提供二十四小時之照顧，服務內容包含護理照護、協助沐浴、進食、服藥、活動安排及相關服務。</p>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-12">
               <div class="card">
-                <img src="img/logo.jpg" class="card-img-top" alt="...">
+                <img src="img/logo.jpg" class="card-img-top" alt="社團法人中華雲鵬展弘協會">
                 <div class="card-body">
                   <h5 class="card-title">社團法人中華雲鵬展弘協會</h5>
-                  <p class="card-text">這是簡介，請自行填寫</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <p class="card-text">雲鵬旗下協會，為減輕家庭居家照顧之負擔與加強長期照顧之專業度，發起照顧服務體系，結合熱心公益之人士與社會資源，共同推動居家照顧與照護服務之相關議題，並以各項社會福利服務為目的，弘揚孝道、協助弱勢、關懷老人、兒童、婦女藉以促進社會祥和發展為首要任務。</p>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-12">
               <div class="card">
-                <img src="img/logo.jpg" class="card-img-top" alt="...">
+                <img src="img/祥富logo.png" class="card-img-top" alt="祥復長照社團法人附設苗栗縣私立祥復綜合長照機構" style="width: 100px;">
                 <div class="card-body">
-                  <h5 class="card-title">祥復長照中心</h5>
-                  <p class="card-text">這是簡介，請自行填寫</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title">祥復長照社團法人附設苗栗縣私立祥復綜合長照機構</h5>
+                  <p class="card-text">祥復綜合長照機構位在苗栗縣獅潭鄉，秉持專業精神，重視每一位長輩之個別化需求，提供全方位之身、心、靈服務；藉由本中心的成立，期能提供長輩有尊嚴並能自主安排生活之幸福家園，更期許機構能成為台灣長照機構頂尖代表。</p>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                 </div>
               </div>
             </div>
@@ -316,47 +372,78 @@
             <div class="col-xl-8">
               <div class="section_tittle text-center">
                 <h2>環境介紹</h2>
-                <span>一些文案</span>
               </div>
             </div>
           </div>
           <div class="row">
             <div id="carouselExampleCaptions" class="w-100 carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
-                <li data-target="#carouselExampleCaptions" data-slide-to="0" class=""></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="1" class=""></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="2" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="7"></li>
               </ol>
               <div class="carousel-inner">
-                <div class="carousel-item">
-                  <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="佔位符：第一張投影片"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="47%" y="50%" fill="#555">First slide</text></svg>
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5 class="text-white">第1張投影片</h5>
-                    <p class="text-white">第1張投影片說明</p>
+                <div class="carousel-item active" @click="openRoomImage(0, 'img/入口.jpg')">
+                  <img src="img/入口.jpg" class="item-img" alt="入口" width="100%">
+                  <div class="carousel-caption">
+                    <h5 class="text-white">入口</h5>
                   </div>
                 </div>
-                <div class="carousel-item">
-                  <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="佔位符：第二張投影片"><title>Placeholder</title><rect width="100%" height="100%" fill="#666"></rect><text x="47%" y="50%" fill="#444">Second slide</text></svg>
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5 class="text-white">第2張投影片</h5>
-                    <p class="text-white">第2張投影片說明</p>
+                <div class="carousel-item" @click="openRoomImage(0, 'img/公共_1.JPG')">
+                  <img src="img/公共_1.JPG" class="item-img" alt="公共空間" width="100%">
+                  <div class="carousel-caption">
+                    <h5 class="text-white">公共空間</h5>
                   </div>
                 </div>
-                <div class="carousel-item active">
-                  <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="佔位符：第三張投影片"><title>Placeholder</title><rect width="100%" height="100%" fill="#555"></rect><text x="47%" y="50%" fill="#333">Third slide</text></svg>
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5 class="text-white">第3張投影片</h5>
-                    <p class="text-white">第3張投影片說明</p>
+                <div class="carousel-item" @click="openRoomImage(0, 'img/公共_2.jpg')">
+                  <img src="img/公共_2.JPG" class="item-img" alt="公共空間" width="100%">
+                  <div class="carousel-caption">
+                    <h5 class="text-white">公共空間</h5>
+                  </div>
+                </div>
+                <div class="carousel-item" @click="openRoomImage(0, 'img/電梯.JPG')">
+                  <img src="img/電梯.JPG" class="item-img" alt="無障礙電梯" width="100%">
+                  <div class="carousel-caption">
+                    <h5 class="text-white">無障礙電梯</h5>
+                  </div>
+                </div>
+                <div class="carousel-item" @click="openRoomImage(0, 'img/廊道_1.JPG')">
+                  <img src="img/廊道_1.JPG" class="item-img" alt="廊道空間" width="100%">
+                  <div class="carousel-caption">
+                    <h5 class="text-white">廊道空間</h5>
+                  </div>
+                </div>
+                <div class="carousel-item" @click="openRoomImage(0, 'img/廊道_2.JPG')">
+                  <img src="img/廊道_2.JPG" class="item-img" alt="廊道空間" width="100%">
+                  <div class="carousel-caption">
+                    <h5 class="text-white">廊道空間</h5>
+                  </div>
+                </div>
+                <div class="carousel-item" @click="openRoomImage(0, 'img/房內_1.png')">
+                  <img src="img/房內_1.png" class="item-img" alt="房內空間" width="100%">
+                  <div class="carousel-caption">
+                    <h5 class="text-white">房內空間</h5>
+                  </div>
+                </div>
+                <div class="carousel-item" @click="openRoomImage(0, 'img/房內_2.JPG')">
+                  <img src="img/房內_2.JPG" class="item-img" alt="房內空間" width="100%">
+                  <div class="carousel-caption">
+                    <h5 class="text-white">房內空間</h5>
                   </div>
                 </div>
               </div>
               <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以前的</font></font></span>
+                <span class="sr-only">Previous</span>
               </a>
               <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下一個</font></font></span>
+                <span class="sr-only">Next</span>
               </a>
             </div>
           </div>
@@ -365,7 +452,7 @@
       <!--::環境介紹 end::-->
   
       <!--::房型介紹 start:: -> check_in --> 
-      <section ref="rooms" class="rooms_part">
+      <!-- <section ref="rooms" class="rooms_part">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-xl-8">
@@ -397,7 +484,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <!--::房型介紹 end::-->
   
       <!--::入住流程 start:: -> check_in --> 
@@ -440,7 +527,7 @@
             <div class="content">
               聯絡專線<span class="material-icons">call </span>：
               
-              <a href="tel:0912345678">0912345678</a>
+              <a href="tel:03-4881300">03-488-1300</a>
             </div>
           </div>
         </div>
@@ -458,98 +545,37 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-sm-6">
+            <div v-for="(event, i) in events" class="col-sm-6">
               <div class="single-home-blog">
                 <div class="card">
-                  <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
+                  <div :id="event.eventId" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
-                      <div class="carousel-item active carousel-item-left">
-                        <img
-                          src="img/event/event_01.jpg"
-                          class="card-img-top"
-                          alt="blog"
-                        />
-                      </div>
-                      <div class="carousel-item carousel-item-next carousel-item-left">
-                        <img
-                          src="img/event/event_02.jpg"
-                          class="card-img-top"
-                          alt="blog"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <img
-                          src="img/event/event_03.jpg"
-                          class="card-img-top"
-                          alt="blog"
-                        />
+                      <div v-for="(img, i) in event.imgs"
+                        class="carousel-item"
+                        :class="[
+                          {'active carousel-item-left': i === 0},
+                          {'carousel-item-next carousel-item-left': i === 1}
+                        ]"
+                        @click="openRoomImage(0, img)"
+                      >
+                        <img :src="img" class="card-img-top" alt="event.eventName"/>
                       </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" :href="`#${event.eventId}`" role="button" data-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+                    <a class="carousel-control-next" :href="`#${event.eventId}`" role="button" data-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
                     </a>
                   </div>
                   
                   <div class="card-body">
-                    <a href="blog.html">
-                      <h5 class="card-title">活動名稱</h5>
+                    <a href="javascript:void(0)">
+                      <h5 class="card-title">{{event.eventName}}</h5>
                     </a>
                     <ul>
-                      <li><span class="ti-user"></span>舉辦單位</li>
-                      <li><span class="ti-time"></span>舉辦時間</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="single-home-blog">
-                <div class="card">
-                  <div id="carouselExampleControls3" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active carousel-item-left">
-                        <img
-                          src="img/event/event_04.jpg"
-                          class="card-img-top"
-                          alt="blog"
-                        />
-                      </div>
-                      <div class="carousel-item carousel-item-next carousel-item-left">
-                        <img
-                          src="img/event/event_05.jpg"
-                          class="card-img-top"
-                          alt="blog"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <img
-                          src="img/event/event_06.jpg"
-                          class="card-img-top"
-                          alt="blog"
-                        />
-                      </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls3" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls3" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
-                  <div class="card-body">
-                    <a href="blog.html">
-                      <h5 class="card-title">活動名稱</h5>
-                    </a>
-                    <ul>
-                      <li><span class="ti-user"></span>舉辦單位</li>
-                      <li><span class="ti-time"></span>舉辦時間</li>
+                      <li><span class="ti-user"></span>{{event.eventOrganizer}}</li>
+                      <li><span class="ti-time"></span>{{event.eventDate}}</li>
                     </ul>
                   </div>
                 </div>
@@ -620,7 +646,8 @@
               <div class="col-lg-5 single-footer-widget">
                 <div class="d-flex">
                   <h5 class="mr-lg-5 mr-3" @click="scrollTo('environment')">環境介紹</h5>
-                  <h5 class="mr-lg-5 mr-3" @click="scrollTo('rooms')">房型介紹</h5>
+                  <h5 class="mr-lg-5 mr-3" @click="scrollTo('company')">認識雲鵬</h5>
+                  <!-- <h5 class="mr-lg-5 mr-3" @click="scrollTo('rooms')">房型介紹</h5> -->
                   <h5 class="mr-lg-5 mr-3" @click="scrollTo('check_in')">入住流程</h5>
                   
                   <h5 class="mr-lg-5 mr-3"><a class="" href="https://www.1111.com.tw/corp/50580203/" target="_blank">加入我們</a></h5>
@@ -653,7 +680,38 @@
           </a>
         </div>
       </footer>
-      <!-- footer part end-->
+       <!-- image Modal -->
+       <div class="modal fade" id="imageModel" tabindex="-1" data-keyboard="false" data-backdrop="static" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" :class="{'singleImg': useSingleImg}" role="document">
+          <div class="modal-content">
+            <button type="button" class="closeBtn" @click="closeImageModal()">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <template v-if="useSingleImg">
+              <img :src="singleImgUrl" class="item-img" width="100%">
+            </template>
+            <template v-else>
+              <button type="button" class="prevBtn" @click="prevCarousel()">
+                <span class="material-symbols-outlined">
+                  chevron_left
+                </span>
+              </button>
+              <button type="button" class="nextBtn" @click="nextCarousel()">
+                <span class="material-symbols-outlined">
+                  chevron_right
+                  </span>
+              </button>
+              <div id="imageCarouse" class="w-100 carousel slide" data-ride="carousel">
+                <div class="carousel-inner" style="width: 80vw;">
+                  <div v-for="(item, i) in modalImages" :class="{'active': i === 0}" class="carousel-item">
+                    <img :src="item" class="item-img" width="100%">
+                  </div>
+                </div>
+              </div>
+            </template>
+          </div>
+        </div>
+      </div>
     </div>
 
 

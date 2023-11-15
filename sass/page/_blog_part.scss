@@ -16,6 +16,11 @@
         font-style: inherit !important;
     }
 
+    .carousel .carousel-item img {
+        object-fit: cover;
+        max-height: 415px;
+    }
+
     .single-home-blog {
         @media #{$small_mobile} {
             margin-bottom: 20px;
